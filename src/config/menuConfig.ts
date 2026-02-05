@@ -44,10 +44,10 @@ import imgMilkshake from "@/assets/products/milkshake.jpg";
    ----------------------------------------------------------------------------- */
 export const RESTAURANT_CONFIG: RestaurantConfig = {
   // Nome exibido no topo do cardápio
-  name: "Noir Gourmet",
+  name: "Nome da Sua Empresa",
   
   // Subtítulo/slogan
-  tagline: "Sabor & Elegância",
+  tagline: "Seu Slogan",
   
   // Número de WhatsApp que RECEBE os pedidos (com código do país)
   // Formato: 55 + DDD + Número (sem espaços ou traços)

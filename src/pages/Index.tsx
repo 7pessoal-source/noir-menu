@@ -47,7 +47,7 @@ const Index = () => {
       <footer className="py-8 border-t border-border">
         <div className="container">
           <div className="text-center space-y-4">
-            <h3 className="font-display text-lg text-primary">Bairros Atendidos</h3>
+            <h3 className="font-display text-lg text-primary">Bairros que sua empresa atende</h3>
             <div className="flex flex-wrap justify-center gap-2">
               {NEIGHBORHOODS.map((n) => (
                 <span

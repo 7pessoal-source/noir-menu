@@ -14,6 +14,31 @@
 
 import { RestaurantConfig, DeliveryConfig, Neighborhood, Product, PaymentMethod } from "@/types/menu";
 
+// ============================================================================
+// IMAGENS DOS PRODUTOS
+// Para alterar uma imagem, substitua o arquivo correspondente em src/assets/products/
+// ============================================================================
+import imgSmashBurger from "@/assets/products/smash-burger.jpg";
+import imgTruffleBurger from "@/assets/products/truffle-burger.jpg";
+import imgChickenSupreme from "@/assets/products/chicken-supreme.jpg";
+import imgVeggieBurger from "@/assets/products/veggie-burger.jpg";
+import imgDoubleBacon from "@/assets/products/double-bacon.jpg";
+import imgPizzaMargherita from "@/assets/products/pizza-margherita.jpg";
+import imgPizzaQuattro from "@/assets/products/pizza-quattro.jpg";
+import imgPizzaPepperoni from "@/assets/products/pizza-pepperoni.jpg";
+import imgPizzaParma from "@/assets/products/pizza-parma.jpg";
+import imgPizzaCalabresa from "@/assets/products/pizza-calabresa.jpg";
+import imgBatataRustica from "@/assets/products/batata-rustica.jpg";
+import imgOnionRings from "@/assets/products/onion-rings.jpg";
+import imgNuggets from "@/assets/products/nuggets.jpg";
+import imgMixAperitivos from "@/assets/products/mix-aperitivos.jpg";
+import imgTabuaFrios from "@/assets/products/tabua-frios.jpg";
+import imgRefrigerante from "@/assets/products/refrigerante.jpg";
+import imgSucoNatural from "@/assets/products/suco-natural.jpg";
+import imgAguaMineral from "@/assets/products/agua-mineral.jpg";
+import imgCerveja from "@/assets/products/cerveja.jpg";
+import imgMilkshake from "@/assets/products/milkshake.jpg";
+
 /* -----------------------------------------------------------------------------
    1. CONFIGURAÇÕES GERAIS DO RESTAURANTE
    ----------------------------------------------------------------------------- */
@@ -112,7 +137,7 @@ export const CATEGORIES = [
    - description: descrição curta
    - price: preço em reais
    - category: categoria (lanches, pizzas, porcoes, bebidas)
-   - image: URL da imagem (opcional)
+   - image: imagem do produto (importada acima)
    ----------------------------------------------------------------------------- */
 export const PRODUCTS: Product[] = [
   // ======================== LANCHES ========================
@@ -122,6 +147,7 @@ export const PRODUCTS: Product[] = [
     description: "Blend de carnes nobres, queijo cheddar, bacon crocante e molho especial da casa",
     price: 38.90,
     category: "lanches",
+    image: imgSmashBurger,
   },
   {
     id: "lanche-02",
@@ -129,6 +155,7 @@ export const PRODUCTS: Product[] = [
     description: "Hambúrguer artesanal com queijo brie, cogumelos salteados e azeite trufado",
     price: 48.90,
     category: "lanches",
+    image: imgTruffleBurger,
   },
   {
     id: "lanche-03",
@@ -136,6 +163,7 @@ export const PRODUCTS: Product[] = [
     description: "Frango empanado crocante, maionese de ervas e salada fresca",
     price: 34.90,
     category: "lanches",
+    image: imgChickenSupreme,
   },
   {
     id: "lanche-04",
@@ -143,6 +171,7 @@ export const PRODUCTS: Product[] = [
     description: "Hambúrguer de grão-de-bico, queijo coalho grelhado e molho tahine",
     price: 36.90,
     category: "lanches",
+    image: imgVeggieBurger,
   },
   {
     id: "lanche-05",
@@ -150,6 +179,7 @@ export const PRODUCTS: Product[] = [
     description: "Dois hambúrgueres, muito bacon, cheddar derretido e cebola caramelizada",
     price: 52.90,
     category: "lanches",
+    image: imgDoubleBacon,
   },
   
   // ======================== PIZZAS ========================
@@ -159,6 +189,7 @@ export const PRODUCTS: Product[] = [
     description: "Molho de tomate San Marzano, mozzarella de búfala e manjericão fresco",
     price: 59.90,
     category: "pizzas",
+    image: imgPizzaMargherita,
   },
   {
     id: "pizza-02",
@@ -166,6 +197,7 @@ export const PRODUCTS: Product[] = [
     description: "Gorgonzola, parmesão, mozzarella e provolone com mel trufado",
     price: 69.90,
     category: "pizzas",
+    image: imgPizzaQuattro,
   },
   {
     id: "pizza-03",
@@ -173,6 +205,7 @@ export const PRODUCTS: Product[] = [
     description: "Pepperoni artesanal, mozzarella e orégano importado",
     price: 62.90,
     category: "pizzas",
+    image: imgPizzaPepperoni,
   },
   {
     id: "pizza-04",
@@ -180,6 +213,7 @@ export const PRODUCTS: Product[] = [
     description: "Presunto de Parma, rúcula selvagem, lascas de parmesão e azeite extra virgem",
     price: 74.90,
     category: "pizzas",
+    image: imgPizzaParma,
   },
   {
     id: "pizza-05",
@@ -187,6 +221,7 @@ export const PRODUCTS: Product[] = [
     description: "Calabresa artesanal, cebola roxa caramelizada e pimenta calabresa",
     price: 54.90,
     category: "pizzas",
+    image: imgPizzaCalabresa,
   },
   
   // ======================== PORÇÕES ========================
@@ -196,6 +231,7 @@ export const PRODUCTS: Product[] = [
     description: "Batatas com casca, temperadas com alecrim e flor de sal",
     price: 28.90,
     category: "porcoes",
+    image: imgBatataRustica,
   },
   {
     id: "porcao-02",
@@ -203,6 +239,7 @@ export const PRODUCTS: Product[] = [
     description: "Anéis de cebola empanados com farinha panko e maionese sriracha",
     price: 32.90,
     category: "porcoes",
+    image: imgOnionRings,
   },
   {
     id: "porcao-03",
@@ -210,6 +247,7 @@ export const PRODUCTS: Product[] = [
     description: "Nuggets de frango temperado com ervas finas",
     price: 34.90,
     category: "porcoes",
+    image: imgNuggets,
   },
   {
     id: "porcao-04",
@@ -217,6 +255,7 @@ export const PRODUCTS: Product[] = [
     description: "Seleção de polenta frita, bolinhos de queijo e croquetes",
     price: 45.90,
     category: "porcoes",
+    image: imgMixAperitivos,
   },
   {
     id: "porcao-05",
@@ -224,6 +263,7 @@ export const PRODUCTS: Product[] = [
     description: "Queijos selecionados, presuntos e antepastos com torradas",
     price: 68.90,
     category: "porcoes",
+    image: imgTabuaFrios,
   },
   
   // ======================== BEBIDAS ========================
@@ -233,6 +273,7 @@ export const PRODUCTS: Product[] = [
     description: "Coca-Cola, Guaraná ou Sprite (350ml)",
     price: 7.90,
     category: "bebidas",
+    image: imgRefrigerante,
   },
   {
     id: "bebida-02",
@@ -240,6 +281,7 @@ export const PRODUCTS: Product[] = [
     description: "Laranja, limão ou maracujá (400ml)",
     price: 12.90,
     category: "bebidas",
+    image: imgSucoNatural,
   },
   {
     id: "bebida-03",
@@ -247,6 +289,7 @@ export const PRODUCTS: Product[] = [
     description: "Com ou sem gás (500ml)",
     price: 5.90,
     category: "bebidas",
+    image: imgAguaMineral,
   },
   {
     id: "bebida-04",
@@ -254,6 +297,7 @@ export const PRODUCTS: Product[] = [
     description: "Heineken, Budweiser ou Corona (long neck)",
     price: 14.90,
     category: "bebidas",
+    image: imgCerveja,
   },
   {
     id: "bebida-05",
@@ -261,6 +305,7 @@ export const PRODUCTS: Product[] = [
     description: "Chocolate, morango ou ovomaltine (400ml)",
     price: 18.90,
     category: "bebidas",
+    image: imgMilkshake,
   },
 ];
 

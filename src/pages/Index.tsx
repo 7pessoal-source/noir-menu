@@ -148,7 +148,7 @@ const Index = () => {
 
             <div className="pt-6">
               <a
-                href="https://SEU-PAINEL-ADMIN.vercel.app"
+                href="https://noir-menu-adminatualizad.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-bold hover:opacity-90 transition-opacity"

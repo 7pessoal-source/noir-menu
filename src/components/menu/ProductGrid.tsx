@@ -1,17 +1,17 @@
 import { Product } from "@/types/menu";
 import { ProductCard } from "./ProductCard";
-import { PRODUCTS } from "@/config/menuConfig";
 
 interface ProductGridProps {
   selectedCategory: string;
   onAddProduct: (product: Product) => void;
+  products: Product[];
 }
 
-export function ProductGrid({ selectedCategory, onAddProduct }: ProductGridProps) {
+export function ProductGrid({ selectedCategory, onAddProduct, products }: ProductGridProps) {
   const filteredProducts =
     selectedCategory === "all"
-      ? PRODUCTS
-      : PRODUCTS.filter((p) => p.category === selectedCategory);
+      ? products
+      : products.filter((p) => p.category === selectedCategory);
 
   return (
     <section className="py-8">
